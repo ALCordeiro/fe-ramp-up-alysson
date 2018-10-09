@@ -74,10 +74,12 @@
 
 @media only screen and (max-width: 748px){
     .card {
-        width: 70%;
+        width: 75%;
         top: 100px;
         bottom: -100px;
         height: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .card-hello{
@@ -93,6 +95,10 @@
     }
 
     .card-hello {
-
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 25px;
+        width: 150px;
     }
 }
