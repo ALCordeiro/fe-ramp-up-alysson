@@ -13,17 +13,35 @@
         display: flex; 
         justify-content: center; 
         align-items: center;
-        padding-top: 40px;
+        margin: 0;
+        list-style: none;
     }
 
     & .social-bar-items-space {
         padding-left: 5%;
     }
+
+    & .social-bar-link {
+        text-decoration: none;
+    }
 }
 
 .social-bar-icons{
+     width: 30px;
+     height: 30px;
     color: #fff;
-    font-size: 20px !important;
+    font-size: 20px;
     line-height: 45px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.social-bar-icons:hover{
+
+    box-shadow:  0 0 0 5px rgb(176,35,39);
+    border-radius: 100%;
+    background-color: rgb(176,35,39);
 }

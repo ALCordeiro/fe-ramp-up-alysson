@@ -59,11 +59,12 @@
 }
 
 .flex_img {
-    flex: 35%;
+    flex: 3;
+    margin-right: 50px;
 }
 
 .flex_text {
-    flex: 65%;
+    flex: 6;
 }
 
 @media only screen and (max-width: 1045px){
@@ -87,7 +88,7 @@
     }
 
     .flex_img {
-        flex: 50%;
+        flex: auto;
         position: relative;
         display: flex;
         justify-content: center;

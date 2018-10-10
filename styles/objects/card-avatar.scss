@@ -1,6 +1,7 @@
 .card-avatar{
-    max-width: 85%;
+    max-width: 100%;
     height: $avatar-height;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 748px){
