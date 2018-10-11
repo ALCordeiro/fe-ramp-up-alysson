@@ -1,7 +1,7 @@
 .card-hello {
     background-color: $red;
-    width: 55px;
-    height: 15px;
+    //width: 55px;
+    //height: 15px;
     position: relative;
     color: #fff;
     font-size: 14px;
@@ -11,12 +11,13 @@
     padding: 7px 12px;
     text-transform: uppercase;
     text-align: center;
+    justify-content: center;
 }
 
 .card-hello::before {
     content: '';
-    width: 0;
-    height: 0;
+    //width: 0;
+    //height: 0;
     top: 100%;
     left: 5px;
     display: block;
@@ -35,7 +36,8 @@
         left: 0;
         margin: auto;
         margin-top: 25px;
-        width: 150px;
-        position: absolute;
+        max-width: 150px;
+        display: flex;
+        //position: absolute;
     }
 }
