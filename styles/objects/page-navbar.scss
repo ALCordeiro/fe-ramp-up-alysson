@@ -2,8 +2,12 @@
 
 .page-navbar{
     background-color: $transparent;
-    font-family: "Fredoka One", cursive;
     padding-left: 15px;
+
+    & .logo-font{
+        font-family: "Fredoka One", cursive;
+    }
+
     & .logo1{
         color: $red;
         font-size: 30px;

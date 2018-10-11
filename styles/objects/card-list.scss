@@ -1,0 +1,12 @@
+
+.card-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 26px;
+
+    & > li {
+        margin-top: 8px;
+    }
+}
+
