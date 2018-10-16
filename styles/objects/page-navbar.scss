@@ -23,6 +23,8 @@
 
     & .items {
         padding-top: 7px;
+        display: flex;
+        justify-content: flex-end;
     }
 
     & .logo1{
@@ -44,8 +46,6 @@
     }
 
     & > .navbar-list{
-        float: right;
-
         & > a {
             display: block;
             color: $navbar-white;
@@ -77,6 +77,10 @@
             left: 0;
             background: $red;
         }
+    }
+
+    & > .navbar-list:last-child {
+        margin-right: 45px;
     }
 }
 

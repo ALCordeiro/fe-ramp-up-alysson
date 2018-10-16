@@ -1,6 +1,5 @@
 .card {
     padding: 57px 50px 15px 50px;
-    //height: $height;
     max-width: $width;
     box-shadow: 0 4px 8px 0 $shadow;
     transition: 0.3s;
@@ -32,12 +31,6 @@
     box-shadow: 0 8px 16px 0 $shadow;
 }
 
-@media only screen and (max-width: 1045px){
-    .card{
-        width: 85%;
-    }
-}
-
 @media only screen and (max-width: 748px){
     .card {
         width: 75%;
@@ -50,7 +43,6 @@
         & .card-flex-img {
             flex: auto;
             position: relative;
-            //display: flex;
             justify-content: center;
             margin: 0;
         }
