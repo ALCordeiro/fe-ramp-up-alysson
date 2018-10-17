@@ -1,0 +1,29 @@
+.about-header {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $gray;
+
+        & > .prefix {
+            padding-right: 10px;
+            font-weight: 300;
+        }
+
+        & + .subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.1;
+            color: $gray;
+            margin-top: 0px;
+            margin-bottom: 0px
+        }
+}
+
+@media only screen and (max-width: 748px){
+
+    .about-header {
+        display: flex;
+        justify-content: center;
+    }
+ }

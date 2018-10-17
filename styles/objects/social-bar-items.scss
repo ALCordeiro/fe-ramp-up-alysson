@@ -7,11 +7,11 @@
     padding: 35px 0 35px 0;
     margin: 0;
 
-    & > .social-bar-items-position {
-        padding-left: 25px;
-    }
-    
-    & > .social-bar-items-position:first-child {
-        padding-left: 0px;
-    }        
+        & > .position {
+            padding-left: 25px;
+        }
+        
+        & > .position:first-child {
+            padding-left: 0px;
+        }        
 }
