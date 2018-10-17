@@ -12,6 +12,10 @@
     z-index: 5;
     position: fixed;
 
+    & > .logomargin {
+        margin: 7px;
+    }
+
 
     & > .items-position {
         position: fixed;

@@ -3,9 +3,12 @@
     flex-wrap:wrap;
     padding: 47px;
 
+    & > .margin {
+        margin-right: 50px;
+    }
+
     & > .firstcolumn {
         flex: 3;
-        margin-right: 50px;
     }
 
     & > .secondcolumn {
