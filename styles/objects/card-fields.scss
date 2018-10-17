@@ -2,7 +2,6 @@
 .card-data {
     & > .title {
         width: 120px;
-        float: left;
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
@@ -12,16 +11,19 @@
     }
 
     & > .data {
-        display: block;
-        margin-left: 125px;
         font-size: 15px;
         font-weight: 400;
         line-height: 20px;
         color: $silver-gray;
     }
+}
 
-    & > .vacation-button {
-        float: left;
+.card-data:last-child {
+    & > .data {
+        margin-left: 52px;
+    }
+
+    & > .title {
         background-color: $red;
         color: #fff;
         font-size: 12px;
@@ -30,6 +32,7 @@
         border-radius: 3px;
         top: -2px;
         padding: 5px 8px 5px 8px;
+        text-transform: capitalize;
     }
 }
 
@@ -43,6 +46,13 @@
             margin-left: 0px;
             display: inline-block;
             width: 100%;
+        }
+    }
+
+    .card-data:last-child {
+        & > .data {
+            margin-left: 0px;
+            margin-top: 7px;
         }
     }
 

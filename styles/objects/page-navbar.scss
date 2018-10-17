@@ -7,80 +7,22 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: transparent;
     top: 0;
     width: 100%;
     z-index: 5;
+    position: fixed;
 
-    & ul {
+
+    & > .items-position {
         position: fixed;
     }
 
-    & .logo{
-        font-family: "Fredoka One", cursive;
-        padding-left: 7px;
-    }
-
-    & .items {
-        padding-top: 7px;
+    & > .items {
         display: flex;
-        justify-content: flex-end;
-    }
-
-    & .logo1{
-        color: #9a9da2;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 50px;
-        overflow: hidden;
-    }
-    
-    & .logo2{
-        color: $red;
-        font-size: 30px;
-        margin-right: 3px; 
-    }
-
-    & .inner{
-        padding: 10px 15px;
-    }
-
-    & > .navbar-list{
-        & > a {
-            display: block;
-            color: $navbar-white;
-            font-size: 13px;
-            text-transform: uppercase;
-            font-weight: 700;
-            line-height: 1;
-            text-align: center;
-            padding: 14px 25px;
-            text-decoration: none;
-            position: relative;
-        }
-
-        & > a:after {
-            content: '';
-            width: 0px;
-            height: 3px;
-            display: block;
-            margin-top: 12px;
-            right: 0;
-            background: $red;
-            transition: width .2s ease-out;
-            transition-property: left right;
-            -webkit-transition: width .2s ease-out;
-        }
-
-        & > a:hover:after {
-            width: 100%;
-            left: 0;
-            background: $red;
-        }
-    }
-
-    & > .navbar-list:last-child {
-        margin-right: 45px;
+        list-style-type: none;
+        margin: 0;
+        right: 0;
+        top: 7px;
     }
 }
 

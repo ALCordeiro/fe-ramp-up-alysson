@@ -4,7 +4,19 @@
     padding: 0;
     list-style: none;
 
-    & > li {
+    & > .list {
+        display: absolute;
+    }
+
+    & > .margin {
         margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 748px){
+    .card-list {
+        & > .list {
+            display: flex;
+        }
     }
 }

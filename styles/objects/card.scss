@@ -1,30 +1,10 @@
 .card {
-    padding: 57px 50px 15px 50px;
     max-width: $width;
     box-shadow: 0 4px 8px 0 $shadow;
     transition: 0.3s;
     background-color: white;
     position: relative; 
     margin: auto; 
-    top: 155px; 
-    right: 0; 
-    bottom: 0; 
-    left: 0;
-
-    & > .card-flex {
-        display: flex; 
-        flex-wrap:wrap;
-        padding-bottom: 30px;
-    }
-
-    & .card-flex-img {
-        flex: 3;
-        margin-right: 50px;
-    }
-
-    & .card-flex-text {
-        flex: 6;
-    }
 }
 
 .card:hover {
@@ -33,18 +13,17 @@
 
 @media only screen and (max-width: 748px){
     .card {
-        width: 75%;
-        top: 100px;
-        bottom: -100px;
-        height: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
+        max-width: 75%;
 
-        & .card-flex-img {
-            flex: auto;
-            position: relative;
-            justify-content: center;
-            margin: 0;
-        }
+        // & > .card-flex {
+        //     display: block;
+        // }
+
+        // & >.card-flex > .card-flex-img {
+        //     flex: auto;
+        //     position: relative;
+        //     justify-content: center;
+        //     margin: 0;
+        // }
     }
 }
