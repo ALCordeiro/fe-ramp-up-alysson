@@ -1,27 +1,26 @@
 .card-flex {
-    display: flex; 
-    flex-wrap:wrap;
     padding: 47px;
 
     & > .firstcolumn {
-        flex: 3;
-        margin-right: 50px;
-    }
-
-    & > .secondcolumn {
-        flex: 6;
+        flex: auto;
+        position: relative;
+        justify-content: center;
+        margin: 0;
     }
 }
 
-@media only screen and (max-width: 748px){
+@media only screen and (min-width: 748px){
     .card-flex {
-        display: block;
-
+        display: flex; 
+        flex-wrap:wrap;
+    
         & > .firstcolumn {
-            flex: auto;
-            position: relative;
-            justify-content: center;
-            margin: 0;
+            flex: 3;
+            margin-right: 50px;
+        }
+    
+        & > .secondcolumn {
+            flex: 6;
         }
     }
 }

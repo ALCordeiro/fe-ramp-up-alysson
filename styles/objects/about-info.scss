@@ -11,6 +11,13 @@
     text-align: center;
     justify-content: center;
 
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 25px;
+    max-width: 150px;
+    display: flex;
+
     &::before {
         content: '';
         top: 100%;
@@ -44,13 +51,9 @@
     }
 }
 
-@media only screen and (max-width: 748px) {
+@media only screen and (min-width: 748px) {
     .hello-balloon {
-        right: 0;
-        left: 0;
-        margin: auto;
-        margin-top: 25px;
-        max-width: 150px;
-        display: flex;
+        display: inline-block;
+        margin-top: 0px;
     }
 }
