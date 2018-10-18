@@ -1,0 +1,8 @@
+.social-bar-link {
+    flex-wrap: wrap;
+    margin: 0;
+
+    & > .link {
+        text-decoration: none;
+    }
+}

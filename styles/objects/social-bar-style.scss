@@ -1,7 +1,16 @@
-.social-bar{
+.social-bar-style{
     background-color: $red;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     margin: auto; 
     right: 0; 
     left: 0;
+
+    & > .items {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 35px 0 35px 0;
+        margin: 0;
+    }
 }
