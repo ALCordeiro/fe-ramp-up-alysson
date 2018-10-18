@@ -1,20 +1,17 @@
-.about-info {
-    
-    & > .balloon {
-        background-color: $red;
-        position: relative;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.1;
-        display: inline-block;
-        padding: 7px 12px;
-        text-transform: uppercase;
-        text-align: center;
-        justify-content: center;
-    }
+.hello-balloon {
+    background-color: $red;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    display: inline-block;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
 
-    & > .balloon:before {
+    &::before {
         content: '';
         top: 100%;
         left: 5px;
@@ -27,31 +24,33 @@
         border-bottom-color: transparent;
         border-top-color: $red;
     }
+}
 
-    & + .header {
+.about-info {
+    
+    & > .balloon { }
+
+    & > .header {
         border-bottom: 1px solid $ice;
         padding-bottom: 25px;
         margin-bottom: 25px;
         margin-top: 25px;
     }
 
-    & + .list {
+    & > .list {
         margin: 0;
         padding: 0;
         list-style: none;
     }
 }
 
-@media only screen and (max-width: 748px){
-    .about-info {
-
-        & > .balloon {
-            right: 0;
-            left: 0;
-            margin: auto;
-            margin-top: 25px;
-            max-width: 150px;
-            display: flex;
-        }
+@media only screen and (max-width: 748px) {
+    .hello-balloon {
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 25px;
+        max-width: 150px;
+        display: flex;
     }
 }

@@ -1,0 +1,5 @@
+.card-list {
+    & > .item + .item {
+        margin-top: 5px;
+    }
+}

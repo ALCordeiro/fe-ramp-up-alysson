@@ -1,7 +1,10 @@
 
-.card-data {
+.card-fields{
     & > .title {
-        width: 120px;
+        flex: 0 0 120px;
+    }
+
+    & > .title > .label {
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
@@ -10,7 +13,16 @@
         font-weight: bold;
     }
 
+    & > .title > .label.-highlight {
+        background-color: $red;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 3px;
+        padding: 5px 8px 5px 8px;
+    }
+
     & > .data {
+        flex: 1;
         font-size: 15px;
         font-weight: 400;
         line-height: 20px;
@@ -20,40 +32,13 @@
 
 .card-data:last-child {
     & > .data {
-        margin-left: 52px;
-    }
-
-    & > .title {
-        background-color: $red;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 1;
-        border-radius: 3px;
-        top: -2px;
-        padding: 5px 8px 5px 8px;
-        text-transform: capitalize;
+        margin-left: 0px;
+        margin-top: 7px;
     }
 }
 
-@media only screen and (max-width: 748px){
-    .card-data{
-        & > .title{
-            width: 100%;
-        }
-
-        & > .data {
-            margin-left: 0px;
-            display: inline-block;
-            width: 100%;
-        }
+@media only screen and (min-width: 748px) {
+    .card-fields {
+        display: flex;
     }
-
-    .card-data:last-child {
-        & > .data {
-            margin-left: 0px;
-            margin-top: 7px;
-        }
-    }
-
 }
