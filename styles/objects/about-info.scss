@@ -17,7 +17,7 @@
 .hello-balloon {
     background-color: $red;
     position: relative;
-    color: #fff;
+    color: $white;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
@@ -42,9 +42,9 @@
         position: absolute;
         border-style: solid;
         border-width: 0px 8px 8px 8px;
-        border-right-color: transparent;
+        border-right-color: $transparent;
         border-left-color: $red;
-        border-bottom-color: transparent;
+        border-bottom-color: $transparent;
         border-top-color: $red;
     }
 }
