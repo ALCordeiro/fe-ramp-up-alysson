@@ -2,19 +2,6 @@
 
 .page-navbar{
     background-color: $transparent;
-    // padding-left: 15px;
-    // list-style-type: none;
-    // margin: 0;
-    // padding: 0;
-    // overflow: hidden;
-    // top: 0;
-    // width: 100%;
-    // z-index: 5;
-    // position: fixed;
-
-    // & > .logomargin {
-    //     margin: 7px;
-    // }
     display: flex;
     justify-content: space-between;
 
@@ -33,10 +20,8 @@
         & .items {
             display: flex;
             list-style-type: none;
-            // margin: 0;
-            // right: 0;
-            // top: 7px;
             padding: 5px;
+            align-items: center;
         }
     }
 }

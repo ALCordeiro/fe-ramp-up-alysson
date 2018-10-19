@@ -5,9 +5,8 @@
         font-size: 13px;
         text-transform: uppercase;
         font-weight: 700;
-        line-height: 1;
         text-align: center;
-        padding: 14px 25px;
+        margin-left: 40px;
         text-decoration: none;
         position: relative;
     }
@@ -17,13 +16,12 @@
         width: 0px;
         height: 3px;
         display: block;
-        margin-top: 12px;
-        right: 0;
         background: $red;
         transition: width .2s ease-out;
-        transition-property: left right;
         -webkit-transition: width .2s ease-out;
-    }
+        position: absolute;
+        top: calc(100% + 10px)
+;    }
 
     & > .link:hover:after {
         width: 100%;
