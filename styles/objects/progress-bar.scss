@@ -1,0 +1,15 @@
+.progress-bar {
+    height: 5px;
+    background-color: $red;
+    display: block;
+    opacity: 0.2;
+    margin-bottom: 25px;
+}
+
+.progress-bar::after {
+    content: '';
+    background-color: $red;
+    width: 50%;
+    height: 100%;
+    display: block;
+}

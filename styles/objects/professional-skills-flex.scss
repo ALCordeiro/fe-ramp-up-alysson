@@ -1,0 +1,11 @@
+.professional-skills-flex {
+    padding: 47px;
+    display: flex;
+    flex-flow: row wrap;
+
+    & > .items {
+        flex: 1 1 200px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
