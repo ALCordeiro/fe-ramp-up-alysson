@@ -1,0 +1,44 @@
+
+.card-fields{
+    & > .title {
+        flex: 0 0 120px;
+    }
+
+    & > .title > .label {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    & > .title > .label.-highlight {
+        background-color: $red;
+        color: $white;
+        text-transform: uppercase;
+        border-radius: 3px;
+        padding: 5px 8px 5px 8px;
+    }
+
+    & > .data {
+        flex: 1;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $silver-gray;
+    }
+}
+
+.card-data:last-child {
+    & > .data {
+        margin-left: 0px;
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (min-width: 748px) {
+    .card-fields {
+        display: flex;
+    }
+}

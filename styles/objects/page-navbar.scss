@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+.page-navbar{
+    background-color: $transparent;
+    display: flex;
+    justify-content: space-between;
+
+    & > .itemsposition {
+        margin: 0;
+        padding: 0;
+    }
+
+    & > .items {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1135px){
+    .page-navbar {
+        & .items {
+            display: flex;
+            list-style-type: none;
+            padding: 5px;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.page-navbar-logo {
+    font-family: "Fredoka One", cursive;
+    color: $gray-logo;
+    font-size: 30px;
+    font-weight: 400;
+    overflow: hidden;
+
+    & > .firstcolumn {
+        color: $red;
+        font-size: 30px;
+        margin-right: 3px; 
+    }
+}

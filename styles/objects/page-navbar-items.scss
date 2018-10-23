@@ -1,0 +1,35 @@
+.navbar-list {
+    & > .link {
+        display: block;
+        color: $navbar-white;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin-left: 40px;
+        text-decoration: none;
+        position: relative;
+    }
+
+    & > .link:after {
+        content: '';
+        width: 0px;
+        height: 3px;
+        display: block;
+        background: $red;
+        transition: width .2s ease-out;
+        -webkit-transition: width .2s ease-out;
+        position: absolute;
+        top: calc(100% + 10px)
+;    }
+
+    & > .link:hover:after {
+        width: 100%;
+        left: 0;
+        background: $red;
+    }
+}
+
+.navbar-list:last-child {
+    margin-right: 35px;
+}

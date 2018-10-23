@@ -1,0 +1,13 @@
+.social-bar-items {
+    list-style: none;
+
+        & > .space {
+            margin-left: 25px;
+            padding: 5px;
+        }
+
+        & > .space.-highlight {
+            margin-left: 0px; 
+            padding: 5px
+        }     
+}
