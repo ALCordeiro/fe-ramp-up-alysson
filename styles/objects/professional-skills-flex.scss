@@ -2,11 +2,13 @@
     padding: 47px;
     display: flex;
     flex-flow: row wrap;
+    list-style-type: none;
 
     & > .items {
         flex: 1 1 200px;
         margin-right: 20px;
         margin-left: 20px;
+        margin-bottom: 25px;
     }
 
     & > .items:empty {

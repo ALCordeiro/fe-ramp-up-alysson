@@ -1,33 +1,15 @@
 <div class="professional-skills">
   <h2 class="title">Professional Skills</h2>
   <div class="card">
-    <div class="professional-skills-flex">
-      <div class="items">
-        <span>HTML</span>
-        <span class="progress-bar"></span>
-      </div>
-      <div class="items">
-        <span>CSS</span>
-        <span class="progress-bar"></span>
-      </div>
-
-      <div class="items">
-        <span>Typescript</span>
-        <span class="progress-bar"></span>
-      </div>
-      <div class="items">
-        <span>SQL</span>
-        <span class="progress-bar"></span>
-      </div>
-
-      <div class="items">
-        <span>C#</span>
-        <span class="progress-bar"></span>
-      </div>
-      <div class="items">
-        <span>Angular</span>
-        <span class="progress-bar"></span>
-      </div>
-    </div>
+    <ul class="professional-skills-flex">
+      <li *ngFor="let element of array" class="items">
+        <span>{{element.name}}</span>
+        <div class="progress-bar">
+          <div class="complete" [style.width.%]="element.value"></div>
+        </div>
+      </li>
+      <li class="items"></li>
+      <li class="items"></li>
+    </ul>
   </div>
 </div>

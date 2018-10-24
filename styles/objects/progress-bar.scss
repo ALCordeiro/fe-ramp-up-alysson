@@ -2,13 +2,10 @@
     height: 5px;
     background-color: $red-white;
     display: block;
-    margin-bottom: 25px;
-}
+    width: 100%;
 
-.progress-bar::after {
-    content: '';
-    background-color: $red;
-    width: 50%;
-    height: 100%;
-    display: block;
+    & > .complete {
+        background-color: $red;
+        height: 5px;
+    }
 }
