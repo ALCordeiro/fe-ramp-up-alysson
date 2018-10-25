@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
+import { ProfessionalSkillsComponent } from './professional-skills/professional-skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    ProfessionalSkillsComponent
   ],
   imports: [
     BrowserModule,

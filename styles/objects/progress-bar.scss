@@ -1,0 +1,11 @@
+.progress-bar {
+    height: 5px;
+    background-color: $red-white;
+    display: block;
+    width: 100%;
+
+    & > .complete {
+        background-color: $red;
+        height: 5px;
+    }
+}
