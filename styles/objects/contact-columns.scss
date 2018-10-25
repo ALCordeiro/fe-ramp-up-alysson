@@ -1,0 +1,12 @@
+.contact-columns {
+    display: flex;
+
+    & > .firstcolumn {
+        flex: 5;
+        margin-right: 25px;
+    }
+
+    & > .secondcolumn {
+        flex: 5;
+    }
+}
