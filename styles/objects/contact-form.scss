@@ -1,13 +1,60 @@
 .contact-form {
+    & > .form-group {
+        position: relative;
+        margin-bottom: 1.5rem;
 
-    & > .fields {
-        & > .input {
-            border: none;
+        & + .form-group {
+            margin-top: 30px;
         }
 
-        & > .line {
+        & > .label {
+            text-transform: uppercase;
+            position: absolute;
+            left: 0;
+            color: #999;
+            background-color: #fff;
+            z-index: 10;
+            top: 0;
+            padding: 7px 0 0 13px;
+            transition: all 200ms;
+            opacity: 0.5;
+        }
+
+        & > .input {
+            position: relative;
+            padding: 12px 0px 5px 0;
+            width: 100%;
+            outline: 0;
+            border: 0;
+            box-shadow: 0 1px 0 0 #e5e5e5;
+            transition: box-shadow 150ms ease-out;
             
+            &:focus {
+            box-shadow: 0 2px 0 0 $red;
+            }
+        }
+
+        & > .-checkbox {
+            margin-bottom: 20px;
         }
     }
-
+  
+    & .input:focus + .label,
+    .input:valid + .label {
+        font-size: 75%;
+        transform: translate3d(0, -100%, 0);
+        opacity: 1;
+    } 
+    
+    & > .button {
+        padding: 15px 20px;
+        background-color: $red;
+        color: $white;
+        border: none;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
 }
