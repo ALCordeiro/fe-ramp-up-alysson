@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-professional-skills',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./professional-skills.component.scss']
 })
 export class ProfessionalSkillsComponent implements OnInit {
+
+  @HostBinding('style.display') display = 'block';
 
   array = [
     {

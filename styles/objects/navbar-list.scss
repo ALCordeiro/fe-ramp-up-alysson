@@ -6,7 +6,6 @@
         text-transform: uppercase;
         font-weight: 700;
         text-align: center;
-        margin-left: 40px;
         text-decoration: none;
         position: relative;
     }
@@ -20,7 +19,7 @@
         transition: width .2s ease-out;
         -webkit-transition: width .2s ease-out;
         position: absolute;
-        top: calc(100% + 10px)
+        top: calc(100% + 5px)
 ;    }
 
     & > .link:hover:after {
@@ -30,6 +29,6 @@
     }
 }
 
-.navbar-list:last-child {
+.navbar-list.-highlight {
     margin-right: 35px;
 }

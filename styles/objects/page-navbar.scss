@@ -6,23 +6,18 @@
     justify-content: space-between;
     z-index: 5;
 
-    & > .itemsposition {
+    & > .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         margin: 0;
         padding: 0;
-    }
+        list-style-type: none;
+        padding: 5px;
+        align-items: center;
 
-    & > .items {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 1135px){
-    .page-navbar {
-        & .items {
-            display: flex;
-            list-style-type: none;
-            padding: 5px;
-            align-items: center;
-        }
+        & > .item {
+            margin: 0 10px 15px;
+        } 
     }
 }

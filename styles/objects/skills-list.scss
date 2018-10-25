@@ -1,0 +1,17 @@
+.skills-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    margin: -20px;
+    padding: 0;
+
+    & > .item {
+        flex: 1 1 200px;
+        margin: 20px;
+    }
+
+    & > .item:empty {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

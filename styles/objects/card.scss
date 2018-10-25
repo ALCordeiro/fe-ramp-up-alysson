@@ -2,6 +2,11 @@
     box-shadow: 0 4px 8px 0 $shadow;
     transition: 0.3s;
     background-color: $white;
+    padding: $card-padding;
+
+    &.-no-padding {
+        padding: 0;
+    }
 }
 
 .card:hover {

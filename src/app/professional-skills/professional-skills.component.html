@@ -1,15 +1,16 @@
 <div class="professional-skills">
   <h2 class="title">Professional Skills</h2>
   <div class="card">
-    <ul class="professional-skills-flex">
-      <li *ngFor="let element of array" class="items">
+    <ul class="skills-list">
+      <li *ngFor="let element of array" class="item">
         <span>{{element.name}}</span>
         <div class="progress-bar">
           <div class="complete" [style.width.%]="element.value"></div>
         </div>
       </li>
-      <li class="items"></li>
-      <li class="items"></li>
+      <!-- flex hack -->
+      <li class="item"></li>
+      <li class="item"></li>
     </ul>
   </div>
 </div>
