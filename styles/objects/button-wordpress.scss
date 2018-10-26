@@ -1,0 +1,23 @@
+.button-wordpress {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    & > .button {
+        padding: 21px 55px;
+        letter-spacing: 0.05em;
+        margin: 5px;
+        font-family: "Opens Sans", sans-serif;
+        text-transform: uppercase;
+        background-color: #e0e0e0;
+        color: $gray;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 3px;
+        transition: box-shadow 1s;
+
+        &:hover {
+            box-shadow: 10px 20px 11px rgba(33,33,33,.2);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.contact-columns {
+
+    & > .firstcolumn {
+        flex: auto;
+        position: relative;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width: 748px){
+    .contact-columns {
+        display: flex; 
+        flex-wrap:wrap;
+    
+        & > .firstcolumn {
+            flex: 5;
+            margin-right: 25px;
+        }
+    
+        & > .secondcolumn {
+            flex: 5;
+        }
+    }
+}

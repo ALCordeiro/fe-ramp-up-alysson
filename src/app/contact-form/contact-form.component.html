@@ -1,0 +1,40 @@
+<div class="contact-columns">
+  <div class="card firstcolumn contact-fields">
+    <form class="form contact-form">
+      <h3 class="title">Feel free to contact me</h3>
+      <div class="field form-group">
+        <input type="text" id="name" class="input" required>
+        <label class="label" for="name">Name</label>
+      </div>
+      <div class="field form-group">
+        <input type="text" id="email" class="input" required>
+        <label class="label" for="email">Email</label>
+      </div>
+      <div class="field form-group">
+        <input type="text" id="subject" class="input" required>
+        <label class="label" for="subject">Subject</label>
+      </div>
+      <div class="field form-group">
+        <textarea type="text" id="message" class="input" required></textarea>
+        <label class="label" for="message">Message</label>
+      </div>
+      <div class="field form-group">
+        <input type="checkbox">
+        <span>I have read the Privacy Policy note.</span>
+      </div>
+      <button type="submit" class="button">Send</button>
+    </form>
+  </div>
+
+  <div class="card secondcolumn">
+    <ul class="contact-infos">
+      <li *ngFor="let element of array" class="list card-fields">
+        <div class="title"><span class="label">{{element.name}}</span></div>
+        <span class="data">{{element.value}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="button-wordpress">
+  <button class="button">Buy Wordpress Version</button>
+</div>

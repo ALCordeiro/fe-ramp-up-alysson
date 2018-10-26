@@ -1,0 +1,8 @@
+.contact-fields {
+    font-family: "Open Sans", sans-serif;
+
+    & > .form {
+        font-size: 16px;
+        color: $gray;
+    }
+}

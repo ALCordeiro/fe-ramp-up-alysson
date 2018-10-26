@@ -1,0 +1,38 @@
+.form-group {
+    position: relative;
+
+
+    & > .label {
+        text-transform: uppercase;
+        position: absolute;
+        left: 0;
+        color: #999;
+        background-color: $white;
+        z-index: 10;
+        top: 0;
+        transition: all 200ms;
+        opacity: 0.5;
+        font-size: 13px;
+    }
+
+    & > .input {
+        position: relative;
+        padding: 12px 0px 5px 0;
+        width: 100%;
+        outline: 0;
+        border: 0;
+        box-shadow: 0 1px 0 0 #e5e5e5;
+        transition: box-shadow 150ms ease-out;
+        
+        &:focus {
+        box-shadow: 0 2px 0 0 $red;
+        }
+    }
+
+    & > .input:focus + .label,
+    .input:valid + .label {
+        font-size: 60%;
+        transform: translate3d(0, -100%, 0);
+        opacity: 1;
+    } 
+}
