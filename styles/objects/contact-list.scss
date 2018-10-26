@@ -2,7 +2,7 @@
     display: flex;
 
     & > .label {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
         flex: 0 0 90px;
@@ -10,5 +10,8 @@
 
     & > .text {
         flex: 1 1 215px;
+        color: $silver-gray;
+        font-size: 15px;
+        font-weight: 400;
     }
 }
