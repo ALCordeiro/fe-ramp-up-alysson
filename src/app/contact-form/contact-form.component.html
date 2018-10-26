@@ -28,6 +28,14 @@
         <button type="submit" class="button">Send</button>
       </form>
     </div>
-    <div class="card secondcolumn"></div>
+
+    <div class="card secondcolumn">
+      <ul class="contact-infos">
+        <li *ngFor="let element of array" class="list contact-list">
+          <span class="label">{{element.name}}</span>
+          <span>{{element.value}}</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
