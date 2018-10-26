@@ -1,8 +1,13 @@
 .contact-form {
 
-    & > .margin {
+    & > .field {
         margin-top: 30px;
-        margin-bottom: 30px;     
+    }
+
+    & > .title {
+        margin: 0;
+        color: $gray;
+        font-size: 24px;
     }
     
     & > .button {
@@ -15,5 +20,6 @@
         font-weight: 700;
         text-transform: uppercase;
         cursor: pointer;
+        margin-top: 25px;
     }
 }
