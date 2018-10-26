@@ -28,9 +28,9 @@
 
   <div class="card secondcolumn">
     <ul class="contact-infos">
-      <li *ngFor="let element of array" class="list contact-list">
-        <span class="label">{{element.name}}</span>
-        <span class="text">{{element.value}}</span>
+      <li *ngFor="let element of array" class="list card-fields">
+        <div class="title"><span class="label">{{element.name}}</span></div>
+        <span class="data">{{element.value}}</span>
       </li>
     </ul>
   </div>
