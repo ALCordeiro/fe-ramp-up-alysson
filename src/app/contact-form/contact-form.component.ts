@@ -13,27 +13,27 @@ export class ContactFormComponent implements OnInit {
     {
       id:1,
       name: 'Email',
-      value: 'max@hotmail.com'
+      value: 'robertsmith@company.com'
     },
     {
       id:2,
       name: 'Phone',
-      value: '+11 111111111'
+      value: '+1 256 254 84 56'
     },
     {
       id:3,
       name: 'Viber',
-      value: '+11 111111111'
+      value: '+1 256 254 84 56'
     },
     {
       id:4,
       name: 'Skype',
-      value: 'maxizin'
+      value: 'robsmithcompany'
     },
     {
       id:5,
       name: 'Address',
-      value: 'Dog Street 420'
+      value: '24058, Belgium, Brussels, Liutter 27, BE'
     }
   ];
 

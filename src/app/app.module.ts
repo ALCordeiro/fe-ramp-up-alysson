@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
 import { ProfessionalSkillsComponent } from './professional-skills/professional-skills.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { SocialBarComponent } from './social-bar/social-bar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     NavbarComponent,
     CardComponent,
     ProfessionalSkillsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SocialBarComponent
   ],
   imports: [
     BrowserModule,

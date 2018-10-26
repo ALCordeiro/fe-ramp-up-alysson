@@ -10,15 +10,15 @@
           <label class="label" for="name">Name</label>
         </div>
         <div class="form-group">
-          <input type="password" id="email" class="input" required>
+          <input type="text" id="email" class="input" required>
           <label class="label" for="email">Email</label>
         </div>
         <div class="form-group">
-          <input type="password" id="subject" class="input" required>
+          <input type="text" id="subject" class="input" required>
           <label class="label" for="subject">Subject</label>
         </div>
         <div class="form-group">
-          <textarea type="password" id="message" class="input" required></textarea>
+          <textarea type="text" id="message" class="input" required></textarea>
           <label class="label" for="message">Message</label>
         </div>
         <div class="form-group -checkbox">
@@ -33,9 +33,12 @@
       <ul class="contact-infos">
         <li *ngFor="let element of array" class="list contact-list">
           <span class="label">{{element.name}}</span>
-          <span>{{element.value}}</span>
+          <span class="text">{{element.value}}</span>
         </li>
       </ul>
     </div>
+  </div>
+  <div class="button-wordpress">
+    <button class="button">Buy Wordpress Version</button>
   </div>
 </div>
