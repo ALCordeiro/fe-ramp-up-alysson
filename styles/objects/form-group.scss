@@ -30,7 +30,7 @@
     }
 
     & > .input:focus + .label,
-    .input:valid + .label {
+    & > .input:valid + .label {
         font-size: 60%;
         transform: translate3d(0, -100%, 0);
         opacity: 1;
