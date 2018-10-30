@@ -1,5 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 
+import { InformationsService } from './../services/informations.service';
+
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
@@ -9,37 +11,17 @@ export class ContactFormComponent implements OnInit {
 
   @HostBinding('style.display') display = 'block';
 
-  array = [
-    {
-      id:1,
-      name: 'Email',
-      value: 'robertsmith@company.com'
-    },
-    {
-      id:2,
-      name: 'Phone',
-      value: '+1 256 254 84 56'
-    },
-    {
-      id:3,
-      name: 'Viber',
-      value: '+1 256 254 84 56'
-    },
-    {
-      id:4,
-      name: 'Skype',
-      value: 'robsmithcompany'
-    },
-    {
-      id:5,
-      name: 'Address',
-      value: '24058, Belgium, Brussels, Liutter 27, BE'
-    }
-  ];
+  array = [];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private informationsService: InformationsService) {
   }
 
+  ngOnInit() {
+    this.array = this.informationsService.getInformations();
+  }
+
+  filterItemsOfIndex(index){
+    var array = this.array.filter(x => !index.includes(x.index));
+    return array;
+  }
 }
