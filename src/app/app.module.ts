@@ -25,7 +25,6 @@ import { CoreModule } from './core/core.module';
     CoreModule,
     routing
   ],
-  // providers: [InformationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
