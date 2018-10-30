@@ -1,6 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 
-import { InformationsService } from './../services/informations.service';
+import { InformationsService } from '../core/services/informations/informations.service';
 
 @Component({
   selector: 'app-contact-form',
