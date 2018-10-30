@@ -1,3 +1,5 @@
+<h2 class="component-title">Contact Us</h2>
+
 <div class="contact-columns">
   <div class="card firstcolumn contact-fields">
     <form class="form contact-form">
@@ -28,7 +30,7 @@
 
   <div class="card secondcolumn">
     <ul class="contact-infos">
-      <li *ngFor="let element of array" class="list card-fields">
+      <li *ngFor="let element of filterItemsOfIndex([1,5,6])" class="list card-fields">
         <div class="title"><span class="label">{{element.name}}</span></div>
         <span class="data">{{element.value}}</span>
       </li>
