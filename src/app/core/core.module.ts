@@ -7,12 +7,6 @@ import { InformationsService } from './services/informations/informations.servic
   imports: [
     CommonModule,
   ],
-  // declarations: [
-  //   InformationsService
-  // ],
-  // exports: [ 
-  //   InformationsService
-  // ],
   providers: [InformationsService]
 })
 export class CoreModule { }
