@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { routing } from './app.routing';
 
+import { AppRoutingModule } from './app.routing.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { MainModule } from './main/main.module';
 
@@ -15,7 +15,7 @@ import { MainModule } from './main/main.module';
     BrowserModule,
     NavbarModule,
     MainModule,
-    routing
+    AppRoutingModule
   ],
   bootstrap: [AppComponent]
 })
