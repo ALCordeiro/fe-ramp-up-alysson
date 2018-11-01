@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { AgeTransformPipe } from './../../pipes/age-transform.pipe';
+import * as moment from 'moment';
 
 @Injectable()
 export class InformationsService {
@@ -8,7 +10,7 @@ export class InformationsService {
             {
                 index:1,
                 name: 'Age',
-                value: '08/30/1996'
+                value:  new AgeTransformPipe().transform(new Date('08/30/1996'))
             },
             {
                 index:2,
