@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card.component';
 import { SocialBarModule } from 'src/app/shared/social-bar/social-bar.module';
 import { CardRoutingModule } from './card.routing.module';
+import { AgeTransformPipe } from './../../core/pipes/age-transform.pipe';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { CardRoutingModule } from './card.routing.module';
     CardRoutingModule
   ],
   declarations: [
-    CardComponent
+    CardComponent,
+    AgeTransformPipe
   ],
   exports: [
     CardComponent

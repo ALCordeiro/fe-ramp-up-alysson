@@ -17,7 +17,8 @@
         <li *ngFor="let element of filterItemsOfIndex([7,8])" class="item card-fields">
           <div class="title" *ngIf="element.index != 6"><span class="label">{{element.name}}</span></div>
           <div class="title" *ngIf="element.index == 6"><span class="label -highlight">{{element.name}}</span></div>
-          <span class="data">{{element.value}}</span>
+          <span class="data" *ngIf="element.index != 1">{{element.value}}</span>
+          <span class="data" *ngIf="element.index == 1">{{element.value | ageTransform}}</span>
         </li>
       </ul>
     </div>

@@ -8,7 +8,7 @@ export class InformationsService {
             {
                 index:1,
                 name: 'Age',
-                value: '4'
+                value: '08/30/1996'
             },
             {
                 index:2,
