@@ -6,9 +6,9 @@ import { ProfessionalSkillsComponent } from './professional-skills/professional-
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
 const mainRoutes: Routes = [
-    { path: 'about', component: CardComponent },
-    { path: 'skills', component: ProfessionalSkillsComponent },
-    { path: 'contact', component: ContactFormComponent }
+    { path: 'about', loadChildren: '../main/card/card.module#CardModule' },
+    { path: 'contact', loadChildren: '../main/contact-form/contact-form.module#ContactFormModule' },
+    { path: 'skills', loadChildren: '../main/professional-skills/professional-skills.module#ProfessionalSkillsModule' }
 ];
 
 @NgModule({
