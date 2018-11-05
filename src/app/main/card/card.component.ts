@@ -1,6 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
+import { InformationsService } from 'src/app/core/services/informations/informations.service';
 
-import { InformationsService } from './../services/informations.service';
 
 @Component({
   selector: 'app-card',
