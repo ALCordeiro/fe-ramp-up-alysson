@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AgeTransformPipe } from './../../pipes/age-transform.pipe';
-import * as moment from 'moment';
+import { AgeTransformPipe } from '../../pipes/age-transform.pipe';
 
 @Injectable()
 export class InformationsService {

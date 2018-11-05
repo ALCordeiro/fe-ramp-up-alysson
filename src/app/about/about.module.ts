@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CardComponent } from './card.component';
+import { AboutComponent } from './about.component';
 import { SocialBarModule } from 'src/app/shared/social-bar/social-bar.module';
-import { CardRoutingModule } from './card.routing.module';
-import { AgeTransformPipe } from './../../core/pipes/age-transform.pipe';
+import { AboutRoutingModule } from './about.routing.module';
+import { AgeTransformPipe } from '../core/pipes/age-transform.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
     SocialBarModule,
-    CardRoutingModule
+    AboutRoutingModule
   ],
   declarations: [
-    CardComponent,
+    AboutComponent,
     AgeTransformPipe
   ],
   exports: [
-    CardComponent
+    AboutComponent
   ]
 })
-export class CardModule { }
+export class AboutModule { }

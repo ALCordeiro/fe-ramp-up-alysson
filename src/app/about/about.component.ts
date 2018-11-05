@@ -3,11 +3,11 @@ import { InformationsService } from 'src/app/core/services/informations/informat
 
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class CardComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   @HostBinding('style.display') display = 'block';
 
