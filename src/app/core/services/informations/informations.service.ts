@@ -10,7 +10,7 @@ export class InformationsService {
             {
                 index:1,
                 name: 'Age',
-                value:  new AgeTransformPipe().transform(new Date('08/30/1996'))
+                value:  new AgeTransformPipe().transform(new Date('1996-08-30T03:00:00.000Z'))
             },
             {
                 index:2,
