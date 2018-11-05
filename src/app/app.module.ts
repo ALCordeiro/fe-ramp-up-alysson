@@ -9,7 +9,7 @@ import { NavbarModule } from './navbar/navbar.module';
 import { CoreModule } from './core/core.module';
 import { LoginService } from './core/services/login/login.service';
 import { LoginComponent } from './login/login.component';
-import { LoginGuard } from './shared/guards/login.guard';
+import { LoginGuard } from './core/guards/login.guard';
 
 @NgModule({
   declarations: [
