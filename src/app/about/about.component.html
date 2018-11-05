@@ -15,9 +15,10 @@
       </div>
       <ul class="list card-list">
         <li *ngFor="let element of filterItemsOfIndex([7,8])" class="item card-fields">
-          <div class="title" *ngIf="element.index != 6"><span class="label">{{element.name}}</span></div>
-          <div class="title" *ngIf="element.index == 6"><span class="label -highlight">{{element.name}}</span></div>
-          <span class="data">{{element.value}}</span>
+          <div class="title" *ngIf="!element.highlight"><span class="label">{{element.name}}</span></div>
+          <div class="title" *ngIf="element.highlight"><span class="label -highlight">{{element.name}}</span></div>
+          <span class="data" *ngIf="element.type == 'default'">{{element.value}}</span>
+          <span class="data" *ngIf="element.type == 'date'">{{element.value | ageTransform}}</span>
         </li>
       </ul>
     </div>
