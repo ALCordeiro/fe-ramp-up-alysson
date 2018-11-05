@@ -20,7 +20,7 @@ export class LoginService {
         }
     }
 
-    userIsAuth() {
+    get isUserAuth(): boolean {
         return this.userAuth;
     }
 
