@@ -1,0 +1,14 @@
+<h2 class="component-title">Login</h2>
+<div class="card">
+    <div class="form contact-form">
+      <div class="field form-group">
+        <input  [(ngModel)]="user.name" type="text" id="name" class="input" required id="user">
+        <label class="label" for="name">Name</label>
+      </div>
+      <div class="field form-group">
+        <input [(ngModel)]="user.password" type="password" id="password" class="input" required id="password">
+        <label class="label" for="password">Password</label>
+      </div>
+      <button type="submit" class="button" (click)="makeLogin()">Login</button>
+    </div>
+</div>

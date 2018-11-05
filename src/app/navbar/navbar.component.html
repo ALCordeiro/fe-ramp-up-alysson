@@ -1,5 +1,5 @@
 
-<nav class="page-navbar">
+<nav class="page-navbar" *ngIf="showNavbar">
   <a class="page-navbar-logo logomargin" routerLink="about"><span class="firstcolumn">RS</span>card</a>
   <ul class="items">
     <li class="item navbar-list"><a class="link" routerLink="about">About</a></li>
@@ -10,6 +10,7 @@
     <li class="item navbar-list"><a class="link" routerLink="pricing">Pricing</a></li>
     <li class="item navbar-list"><a class="link" routerLink="blog">Blog</a></li>
     <li class="item navbar-list"><a class="link" routerLink="calendar">Calendar</a></li>
-    <li class="item navbar-list -highlight"><a class="link" href="#other">Other</a></li>
+    <li class="item navbar-list"><a class="link" href="#other">Other</a></li>
+    <li class="item navbar-list -highlight"><a class="link" href="login">Login</a></li>
   </ul>
 </nav>
