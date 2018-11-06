@@ -30,8 +30,8 @@
 
   <div class="card secondcolumn">
     <ul class="contact-infos">
-      <li *ngFor="let element of filterItemsOfIndex([1,5,6])" class="list card-fields">
-        <div class="title"><span class="label">{{element.name}}</span></div>
+      <li *ngFor="let element of contact" class="list card-fields">
+        <div class="title"><span class="label">{{element.label}}</span></div>
         <span class="data">{{element.value}}</span>
       </li>
     </ul>
