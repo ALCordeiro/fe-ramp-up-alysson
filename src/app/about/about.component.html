@@ -14,9 +14,9 @@
         </h2>
       </div>
       <ul class="list card-list">
-        <li *ngFor="let element of filterItemsOfIndex([7,8])" class="item card-fields">
-          <div class="title" *ngIf="!element.highlight"><span class="label">{{element.name}}</span></div>
-          <div class="title" *ngIf="element.highlight"><span class="label -highlight">{{element.name}}</span></div>
+        <li *ngFor="let element of about" class="item card-fields">
+          <div class="title" *ngIf="!element.highlight"><span class="label">{{element.label}}</span></div>
+          <div class="title" *ngIf="element.highlight"><span class="label -highlight">{{element.label}}</span></div>
           <span class="data" *ngIf="element.type == 'default'">{{element.value}}</span>
           <span class="data" *ngIf="element.type == 'date'">{{element.value | ageTransform}}</span>
         </li>
