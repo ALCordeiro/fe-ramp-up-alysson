@@ -3,7 +3,6 @@ import { InformationsService } from 'src/app/core/services/informations/informat
 import { Highlight } from 'src/app/shared/enums/highlight.enum';
 import { Type } from 'src/app/shared/enums/type.enum';
 
-
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',

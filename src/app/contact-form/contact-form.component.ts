@@ -42,7 +42,7 @@ export class ContactFormComponent implements OnInit {
 
   constructor(private informationsService: InformationsService) {
   }
-
+  
   ngOnInit() {
   }
 }

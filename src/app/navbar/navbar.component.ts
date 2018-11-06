@@ -1,4 +1,5 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
+import { LoginService } from '../core/services/login/login.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +10,14 @@ export class NavbarComponent implements OnInit {
 
   @HostBinding('style.display') display = 'block';
 
-  constructor() { }
+  showNavbar: boolean= false;
+
+  constructor(private loginService: LoginService) { }
 
   ngOnInit() {
+    this.loginService.showNavbarEmitter.subscribe(
+      show => this.showNavbar = show
+    );
   }
 
 }
