@@ -1,6 +1,7 @@
 import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Informations } from './informations';
+import { delay } from 'rxjs/operators';
 
 @Injectable()
 export class InformationsService {
@@ -19,6 +20,6 @@ export class InformationsService {
     };
 
     get informations$(): Observable<Informations> {
-        return of(this.info);
+        return of(this.info).pipe(delay(1000));
     }
 }

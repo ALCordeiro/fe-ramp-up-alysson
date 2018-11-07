@@ -10,6 +10,6 @@ export class AboutResolver implements Resolve<String> {
         route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
         ): Observable<any>|Promise<any>|any {
-            return this.informationService.informations;
+            return this.informationService.informations$;
     }
 }
