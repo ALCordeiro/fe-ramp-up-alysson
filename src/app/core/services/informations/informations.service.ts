@@ -20,6 +20,6 @@ export class InformationsService {
     };
 
     get informations$(): Observable<Informations> {
-        return of(this.info).pipe(delay(1000));
+        return of(this.info);
     }
 }

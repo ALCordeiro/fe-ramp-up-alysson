@@ -1,6 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { InformationsService } from 'src/app/core/services/informations/informations.service';
 import { Type } from 'src/app/shared/enums/type.enum';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
@@ -13,37 +14,39 @@ export class ContactFormComponent implements OnInit {
 
   contact = [];
 
-  constructor(private informationsService: InformationsService) {
+  constructor(private informationsService: InformationsService,  private route: ActivatedRoute, private router: Router) {
   }
   
   ngOnInit() {
-    this.informationsService.informations$.subscribe(data => {
+    this.route.data.subscribe(
+      (data) => {
       this.contact = [{
         label: 'E-mail',
-        value: data.email,
+        value: data.contact.email,
         type: Type.Default,
         highlight: false
       }, {
         label: 'Phone',
-        value: data.phone,
+        value: data.contact.phone,
         type: Type.Default,
         highlight: false
       }, {
         label: 'Viber',
-        value: data.viber,
+        value: data.contact.viber,
         type: Type.Default,
         highlight: false
       }, {
         label: 'Skype',
-        value: data.skype,
+        value: data.contact.skype,
         type: Type.Default,
         highlight: false
       }, {
         label: 'Address',
-        value: data.address,
+        value: data.contact.address,
         type: Type.Default,
         highlight: false
-      }]
-    });
+      }]      
+      }
+    );
   }
 }

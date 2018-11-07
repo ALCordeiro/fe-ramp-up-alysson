@@ -4,7 +4,7 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot, Resolve } from "@angular/r
 import { InformationsService } from "../services/informations/informations.service";
 
 @Injectable()
-export class AboutResolver implements Resolve<String> {
+export class InformationsResolver implements Resolve<String> {
     constructor(private informationService: InformationsService) {}
     resolve(
         route: ActivatedRouteSnapshot,

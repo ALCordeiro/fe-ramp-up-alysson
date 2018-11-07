@@ -1,4 +1,3 @@
-import { Informations } from './../core/services/informations/informations';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { InformationsService } from 'src/app/core/services/informations/informations.service';
 import { Type } from 'src/app/shared/enums/type.enum';
