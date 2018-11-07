@@ -18,7 +18,7 @@ export class InformationsService {
         viber: "+1 256 254 84 56"
     };
 
-    get informations(): Observable<Informations> {
+    get informations$(): Observable<Informations> {
         return of(this.info);
     }
 }
