@@ -10,6 +10,7 @@ import { CoreModule } from './core/core.module';
 import { LoginService } from './core/services/login/login.service';
 import { LoginComponent } from './login/login.component';
 import { LoginGuard } from './core/guards/login.guard';
+import { AboutResolver } from './core/guards/about.resolver';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,6 @@ import { LoginGuard } from './core/guards/login.guard';
     FormsModule
   ],
   bootstrap: [AppComponent],
-  providers: [LoginService, LoginGuard]
+  providers: [LoginService, LoginGuard, AboutResolver]
 })
 export class AppModule { }
