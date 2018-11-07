@@ -14,8 +14,6 @@ export class AboutComponent implements OnInit {
 
   about = [];
 
-  informations: Informations;
-
   constructor(private informationsService: InformationsService) {
   }
 

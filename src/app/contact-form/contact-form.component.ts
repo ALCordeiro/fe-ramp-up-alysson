@@ -14,8 +14,6 @@ export class ContactFormComponent implements OnInit {
 
   contact = [];
 
-  informations: Informations;
-
   constructor(private informationsService: InformationsService) {
   }
   
