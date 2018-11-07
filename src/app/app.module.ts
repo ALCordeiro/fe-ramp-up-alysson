@@ -11,6 +11,7 @@ import { LoginService } from './core/services/login/login.service';
 import { LoginComponent } from './login/login.component';
 import { LoginGuard } from './core/guards/login.guard';
 import { InformationsResolver } from './core/guards/informations.resolver';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InformationsResolver } from './core/guards/informations.resolver';
     NavbarModule,
     AppRoutingModule,
     CoreModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent],
   providers: [LoginService, LoginGuard, InformationsResolver]

@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
       (data) => {
         this.about = [{
           label: 'Age',
-          value: data.about.age,
+          value: data.about.dateOfBirth,
           type: Type.Date,
           highlight: false
         }, {
