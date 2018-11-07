@@ -7,7 +7,6 @@ import * as moment from 'moment';
 export class AgeTransformPipe implements PipeTransform {
 
   transform(value: Date): string {
-    debugger;
     let valueFormat = moment(value).format('MM/DD/YYYY');
     let birthdate = moment(valueFormat);
     let age = "";

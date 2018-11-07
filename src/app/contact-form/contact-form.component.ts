@@ -1,7 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { InformationsService } from 'src/app/core/services/informations/informations.service';
 import { Type } from 'src/app/shared/enums/type.enum';
-import { Highlight } from 'src/app/shared/enums/highlight.enum';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
@@ -12,37 +12,41 @@ export class ContactFormComponent implements OnInit {
 
   @HostBinding('style.display') display = 'block';
 
-  contact = [{
-    label: 'E-mail',
-    value: this.informationsService.informations.email,
-    type: Type.Default,
-    highlight: Highlight.NotHighlight
-  }, {
-    label: 'Phone',
-    value: this.informationsService.informations.phone,
-    type: Type.Default,
-    highlight: Highlight.NotHighlight
-  }, {
-    label: 'Viber',
-    value: this.informationsService.informations.viber,
-    type: Type.Default,
-    highlight: Highlight.NotHighlight
-  }, {
-    label: 'Skype',
-    value: this.informationsService.informations.skype,
-    type: Type.Default,
-    highlight: Highlight.NotHighlight
-  }, {
-    label: 'Adress',
-    value: this.informationsService.informations.address,
-    type: Type.Default,
-    highlight: Highlight.NotHighlight
-  }
-  ]
+  contact = [];
 
-  constructor(private informationsService: InformationsService) {
+  constructor(private informationsService: InformationsService,  private route: ActivatedRoute, private router: Router) {
   }
   
   ngOnInit() {
+    this.route.data.subscribe(
+      (data) => {
+      this.contact = [{
+        label: 'E-mail',
+        value: data.contact.email,
+        type: Type.Default,
+        highlight: false
+      }, {
+        label: 'Phone',
+        value: data.contact.phone,
+        type: Type.Default,
+        highlight: false
+      }, {
+        label: 'Viber',
+        value: data.contact.viber,
+        type: Type.Default,
+        highlight: false
+      }, {
+        label: 'Skype',
+        value: data.contact.skype,
+        type: Type.Default,
+        highlight: false
+      }, {
+        label: 'Address',
+        value: data.contact.address,
+        type: Type.Default,
+        highlight: false
+      }]      
+      }
+    );
   }
 }
