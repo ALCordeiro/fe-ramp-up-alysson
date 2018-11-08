@@ -26,4 +26,8 @@ export class InformationsService {
     get informations$(): Observable<Informations> {
         return this.http.get<Informations>(this.API);
     }
+
+    post(form) {
+        
+    }
 }

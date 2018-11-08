@@ -1,7 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { InformationsService } from 'src/app/core/services/informations/informations.service';
 import { Type } from 'src/app/shared/enums/type.enum';
 import { ActivatedRoute, Router } from '@angular/router';
+import { map } from "rxjs/operators";
 
 @Component({
   selector: 'app-contact-form',
@@ -14,7 +16,11 @@ export class ContactFormComponent implements OnInit {
 
   contact = [];
 
-  constructor(private informationsService: InformationsService,  private route: ActivatedRoute, private router: Router) {
+  constructor(private informationsService: InformationsService,  private route: ActivatedRoute, private router: Router, private http: HttpClient) {
+  }
+
+  onSubmit(form){
+    this.http.post('http://localhost:3000/contact', form.value).subscribe(data => console.log(data));
   }
   
   ngOnInit() {

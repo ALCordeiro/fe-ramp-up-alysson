@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { ContactFormComponent } from './contact-form.component';
 import { ContactFormRoutingModule } from './contact-form.routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    ContactFormRoutingModule
+    ContactFormRoutingModule,
+    FormsModule
   ],
   declarations: [
     ContactFormComponent
