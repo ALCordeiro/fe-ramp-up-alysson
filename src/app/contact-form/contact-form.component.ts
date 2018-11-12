@@ -20,7 +20,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   onSubmit(form){
-    this.http.post('http://localhost:3000/contact', form.value).subscribe(data => console.log(data));
+    this.informationsService.post(form);
   }
   
   ngOnInit() {
