@@ -44,7 +44,7 @@ describe('GetInformations', () => {
         viber: "+1 256 254 84 56"
       }];
   
-      service.informations$.pipe(takeUntil(destroyed$)).subscribe(informations => {
+      service.informations$().pipe(takeUntil(destroyed$)).subscribe(informations => {
         expect(informations).toEqual(dummyInformations);
       });
   

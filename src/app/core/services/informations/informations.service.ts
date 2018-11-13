@@ -11,7 +11,7 @@ export class InformationsService {
 
     constructor(private http: HttpClient) { }
 
-    get informations$(): Observable<Informations> {
+    informations$(): Observable<Informations> {
         return this.http.get<Informations>(this.API);
     }
 
