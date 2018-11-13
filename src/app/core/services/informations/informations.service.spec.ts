@@ -1,10 +1,14 @@
 import { TestBed, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { InformationsService } from './informations.service';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 describe('GetInformations', () => {
     let service: InformationsService;
     let httpMock: HttpTestingController;
+
+    let destroyed$: Subject<void>;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
@@ -13,8 +17,16 @@ describe('GetInformations', () => {
         });
         service = TestBed.get(InformationsService);
         httpMock = TestBed.get(HttpTestingController);
+
+        destroyed$ = new Subject();
     });
 
+    afterEach(() => {
+        httpMock.verify();
+
+        destroyed$.next();
+        destroyed$.complete();
+    });
 
     it('should return an Observable<Informations>', () => {
       const dummyInformations = [{
@@ -32,7 +44,7 @@ describe('GetInformations', () => {
         viber: "+1 256 254 84 56"
       }];
   
-      service.informations$.subscribe(informations => {
+      service.informations$.pipe(takeUntil(destroyed$)).subscribe(informations => {
         expect(informations).toEqual(dummyInformations);
       });
   
